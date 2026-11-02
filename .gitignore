@@ -1,0 +1,44 @@
+# Licensed competition data and anything that could reconstruct it
+data/*
+!data/README.md
+**/*_tactical.mp4
+**/*_broadcast.mp4
+**/*_atd.txt
+**/*_atd.xml
+**/*_homography.csv
+**/*_smart_tagging.xml
+**/*_possession_gt*.csv
+**/*_possession_gt*.json
+**/*_tracking*.csv
+**/*_tracking*.parquet
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Generated predictions, reports, and experiment outputs
+outputs/
+experiments/outputs/
+evaluation/results/*.csv
+evaluation/reports/
+*.pickle
+*.pkl
+*.joblib
+
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Local configuration and editor files
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
+*.swp

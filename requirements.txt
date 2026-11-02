@@ -1,0 +1,7 @@
+# Phase 1 exploration dependencies.
+# The organisers' evaluator itself only requires numpy and pandas.
+numpy
+pandas
+matplotlib
+kloppy==3.18.0
+jupyter
