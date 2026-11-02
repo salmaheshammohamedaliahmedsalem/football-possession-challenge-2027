@@ -3,7 +3,7 @@
 ## One-time setup
 
 \`\`\`bash
-git clone https://github.com/<owner>/football-possession-challenge-2027.git
+git clone https://github.com/salmaheshammohamedaliahmedsalem/football-possession-challenge-2027.git
 cd football-possession-challenge-2027
 python3 -m venv .venv
 source .venv/bin/activate
@@ -46,4 +46,3 @@ Open a pull request on GitHub into \`main\`. Explain what was inspected, include
 ## Adding collaborators
 
 The repository owner must add Khadija and Omar from GitHub's repository Settings → Collaborators. Their GitHub usernames are required; do not guess them.
-
