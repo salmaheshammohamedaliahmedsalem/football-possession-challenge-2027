@@ -55,3 +55,16 @@ For collaboration commands, see [`docs/collaboration_guide.md`](docs/collaborati
 ## Team rule
 
 Use each person's directory for independent exploration and a personal branch for changes. Keep `main` stable. Open a pull request before merging shared work.
+
+## Submission preparation
+
+The official submission is made through the Google Form sent to registered participants, not by uploading a CSV to GitHub. It requires one validated possession CSV, this public repository URL, and the short technical document in [`docs/technical_submission.md`](docs/technical_submission.md). To prepare a local package named after the exact registered team name:
+
+```bash
+python salma/scripts/prepare_submission.py \
+  --team-name "Spain Lesgo" \
+  --candidate /absolute/path/to/local-results/gap_filled_bridge.csv \
+  --validator /absolute/path/to/more-than-a-hack-2027/evaluation/validate_submission.py
+```
+
+The generated `submission_ready/` folder is ignored and must not be committed, because the possession CSV is derived from licensed match data.

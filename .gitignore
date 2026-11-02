@@ -18,6 +18,7 @@ data/*
 
 # Generated predictions, reports, and experiment outputs
 outputs/
+submission_ready/
 experiments/outputs/
 evaluation/results/*.csv
 evaluation/reports/
