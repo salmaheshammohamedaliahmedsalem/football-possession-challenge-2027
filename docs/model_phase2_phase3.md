@@ -43,6 +43,20 @@ The gap-bridging candidate is currently the strongest reproducible candidate. It
 structural: it preserves the official temporal smoothing behavior and bridges only short missing-ball
 gaps with agreeing live-team evidence outside set-piece intervals.
 
+An independent Viterbi architecture was also tested. It has the strongest public macroF1 and
+transition F1, but it fragments possession spells, so it is a complementary fallback rather than
+the current primary submission candidate. The Viterbi-plus-spell-consolidation variant reduces
+fragmentation while retaining most of that frame-level gain. Both are retained for private-score
+comparison because the public window is too small to establish a reliable ranking.
+
+To reproduce the Viterbi candidates:
+
+    python shared/viterbi_model.py \
+      --out /absolute/path/to/local-results/viterbi_temporal.csv
+
+    python shared/viterbi_smoothed_model.py \
+      --out /absolute/path/to/local-results/viterbi_smoothed.csv
+
 ## Computer vision status
 
 The downloaded bundle contains no tactical or broadcast video files, so a raw-pixel model cannot be trained or evaluated from the available inputs. The homography and ATD are already computer-vision outputs, and this model uses their pitch geometry. salma/scripts/probe_video_availability.py is included so a future video bundle can be checked before adding an image model.

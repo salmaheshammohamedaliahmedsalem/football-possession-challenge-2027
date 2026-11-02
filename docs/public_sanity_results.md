@@ -11,6 +11,8 @@ used as a private-score estimate or as a tuning target.
 | official baseline smooth125 | 0.4242 | 0.5812 | 16 |
 | phase2/3 state machine | 0.1889 | 0.6049 | 55 |
 | phase2/3 gap bridge | 0.3692 | 0.6100 | 22 |
+| phase2/3 Viterbi | 0.1450 | 0.6527 | 63 |
+| phase2/3 Viterbi + spell consolidation | 0.1808 | 0.6549 | 56 |
 
 The candidate CSVs and detailed JSON reports remain outside the public repository. The repository
 contains the code and aggregate results only, so the pipeline can regenerate them locally without
